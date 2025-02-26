@@ -7,7 +7,7 @@ const port = 3000;
 const comments = require('./comments');
 
 // create a route for getting comments
-app.get('/comments', (req, res) => {
+app.get('/comments', (_req, res) => {
   res.send(comments);
 });
 
